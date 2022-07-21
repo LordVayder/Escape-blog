@@ -101,7 +101,7 @@ ul {
 .nav__close,
 .nav__toggle {
     color: var(--title-color);
-    font-size: var(--h1-font-size);
+    font-size: 2rem;
     cursor: pointer;
     display: none;
 }
@@ -361,9 +361,38 @@ footer {
         margin-right: 1rem;
     }
 
+    .nav {
+        padding: var(--m-1) 0;
+    }
+
     .nav__menu {
+        width: 100%;
         position: absolute;
         top: -150%;
+        left: 0;
+        background-color: var(--title-color);
+        transition: .4s;
+        border-radius: 0 0 20px 20px;
+        padding: 30px 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        row-gap: var(--m-1-5);
+        align-items: center;
+    }
+
+    .nav__link,
+    .nav__close {
+        color: var(--orange-color);
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .nav__close {
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
     }
 
     .nav__toggle,
@@ -381,9 +410,23 @@ footer {
         width: 27px;
         height: 27px;
     }
+
+    .header__info {
+        padding: 30px 0 40px 0;
+    }
 }
 
 @media screen and (max-width: 520px) {
+    .header__title {
+        font-size: 30px;
+        line-height: 31px;
+    }
+    
+    .header__description {
+        font-size: var(--h3-font-size);
+        line-height: var(--m-1);
+    }
+
     .featured__boxes {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -399,4 +442,8 @@ footer {
     .signup button {
         padding: 18px 30px;
     }
+}
+
+.show-menu {
+    top: 0;
 }
