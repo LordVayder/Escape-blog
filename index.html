@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="assets/css/style.css">
-        <title>Escape</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <title>Escape.</title>
     </head>
 
     <body>
@@ -27,11 +32,19 @@
                             <a href="#contact" class="nav__link">CONTACT</a>
                         </li>
                     </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
                 </div>
             </nav>
 
             <div class="header__info">
-                <h1 class="header__title">Let's do it</h1>
+                <h1 class="header__title">Let's do it together.</h1>
                 <p class="header__description">We travel the world in search of stories. Come along for the ride.</p>
                 <button class="header__btn">View Latest Posts</button>
             </div>
@@ -50,7 +63,7 @@
             <div class="featured container">
                 <h1 class="title">Featured Posts</h1>
                 
-                <div class="featured__boxes">
+                <div class="featured__boxes grid">
                     <div class="featured__box featured__box1">
                         <span class="category">ADVENTURE</span>
                         <h1 class="featured__title">The Road Ahead</h1>
@@ -167,5 +180,7 @@
                 </div>
             </footer>
         </main>
+
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
